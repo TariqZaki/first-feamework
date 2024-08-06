@@ -1,0 +1,69 @@
+.lineBefore
+{
+    position: absolute;
+    left: 45%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 4px;
+    background-color: #212529;
+}
+.lineAfter
+{
+    position: absolute;
+    left: 55%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 4px;
+    background-color: #212529;
+}
+.cursor-pointer
+{
+    cursor: pointer;
+}
+.layer
+{
+    background-color: #1ABC9C;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+.col-md-4:hover .layer
+{
+    opacity: 0.9;
+}
+/* .col-md-4:hover .layer .fa-plus
+{
+    opacity: 1;
+} */
+.fa-plus
+{
+    font-size: 6.25rem;
+}
+.popImg
+{
+    width:40%;
+}
+/*!<--- media query ---->*/
+@media (max-width: 576px)
+{
+    .lineBefore
+{
+    position: absolute;
+    left: 35%;
+    width: 80px;
+    height: 4px;
+    background-color: #212529;
+}
+.lineAfter
+{
+    position: absolute;
+    left: 65%;
+    width: 80px;
+    height: 4px;
+    background-color: #212529;
+}
+.popImg
+{
+    width:100%;
+}
+}
+/*!<--- media query ---->*/

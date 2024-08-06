@@ -1,0 +1,67 @@
+#info
+{
+    background-color: #2C3E50;
+}
+i
+{
+    border: 1px solid #fff;
+    border-radius: 50%;
+    padding: 10px;
+}
+.cursor-pointer
+{
+    cursor: pointer;
+}
+.fa-facebook
+{
+    background-color: transparent;
+    transition: all 0.5s ease-in-out;
+}
+.fa-facebook:hover
+{
+    background-color: #3b5998;
+    border: 1px #3b5998 solid;
+}
+.fa-twitter
+{
+    background-color: transparent;
+    transition: all 0.5s ease-in-out;
+}
+.fa-twitter:hover
+{
+    background-color: #00aced;
+    border: 1px #00aced solid;
+}
+.fa-linkedin-in
+{
+    background-color: transparent;
+    transition: all 0.5s ease-in-out;
+}
+.fa-linkedin-in:hover
+{
+    background-color: #007bb5;
+    border: 1px #007bb5 solid;
+}
+.fa-globe
+{
+    background-color: transparent;
+    transition: all 0.5s ease-in-out;
+}
+.fa-globe:hover
+{
+    background-color: #A02334;
+    border: 1px #A02334 solid;
+}
+/*!<--- media query ---->*/
+@media (max-width:576px)
+{
+    .location
+    {
+        margin-bottom: 50px;
+    }
+    .web
+    {
+        margin-bottom: 50px;
+    }
+}
+/*!<--- media query ---->*/

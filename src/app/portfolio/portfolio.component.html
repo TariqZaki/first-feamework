@@ -1,0 +1,28 @@
+<section class="portfolio mt-5 pt-5" id="portfolio">
+    <div class="container my-5">
+        <div class="title">
+            <h2 class="text-uppercase text-center fw-bolder fs-1">portfolio component</h2>
+            <div class="shape my-4 text-center d-flex justify-content-center align-items-center">
+                <div class="lineBefore"></div>
+                <i class="fa-solid fa-star"></i>
+                <div class="lineAfter"></div>
+            </div>
+        </div>
+        <div class="row g-5">
+            @for (img of images ; track $index)
+            {
+                <div class="col-md-4 cursor-pointer" role="button">
+                    <div (click)="isHide = false ; modelImg = img"  class="card border-0">
+                        <img [src]="img" class="img-top" class="rounded-3" alt="art photo">
+                        <div class="layer position-absolute top-0 end-0 start-0 bottom-0  d-flex justify-content-center rounded align-items-center ">
+                            <i class="fa-solid fa-plus fw-bold text-white"></i>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+<div (click)="hideModel( $event.target , photo )" [class.d-none]="isHide" class="model position-fixed top-0 start-0 bottom-0 w-100 bg-secondary  bg-opacity-50 d-flex justify-content-center align-items-center">
+    <img #photo [src]="modelImg" class="popImg" alt="art photo">
+</div>
+</section>
